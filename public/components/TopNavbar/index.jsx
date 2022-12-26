@@ -9,8 +9,8 @@ export default function TopNavBar (){
         <Box 
             display={'flex'} 
             justifyContent={'flex-start'} 
-            margin={'10px 50px'} 
-            width={'100vw'}
+            padding={'10px 50px'} 
+            
         >
             <Box>
                 <Image alt="Logo da Fullstacker" src={logo}/>
@@ -18,10 +18,16 @@ export default function TopNavBar (){
                     {'<Home />'}
                 </Link>
                 <Link href='/' className={style.links}>
-                    {'<Javascript />'}
+                    {'<Portfólio />'}
                 </Link>
                 <Link href='/' className={style.links}>
-                    {'<Sobre />'}
+                    {'<Currículo />'}
+                </Link>
+                <Link href='/' className={style.links}>
+                    {'<Sobre mim />'}
+                </Link>
+                <Link href='/' className={style.links}>
+                    {'<Contato />'}
                 </Link>
             </Box>           
         </Box>
