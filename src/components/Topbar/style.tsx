@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { FiMenu } from 'react-icons/fi';
 
 const Main = styled.div`
     background-color: #333;
@@ -13,6 +14,19 @@ const Main = styled.div`
 const LinksContainer = styled.div`
     display: flex;
     position: relative;
+    @media (max-width: 768px) {
+        display: none;   
+    }
+`;
+
+const FiMenuIcon = styled(FiMenu)`
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+        margin: 40px 20px;
+        font-size: 30px;
+        color: #ddd;
+    }
 `;
 
 const Logo = styled(Image)`
@@ -23,4 +37,4 @@ const Logo = styled(Image)`
 
 
 
-export { Main, LinksContainer, Logo }
+export { Main, LinksContainer, Logo, FiMenuIcon }

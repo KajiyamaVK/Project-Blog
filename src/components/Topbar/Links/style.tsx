@@ -26,8 +26,12 @@ const Main = styled.div`
 `;
 
 const Number = styled.span`
-    color:'#00bf63';
-    margin: '0 10px 0 0px'
+    color:#00bf63;
+    margin:0 10px 0 0px;
 `;
 
-export { Main, Number }
+const LinkLabel = styled.span`
+    color:#ddd
+`;
+
+export { Main, Number, LinkLabel }
