@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Topbar from '../components/Topbar'
 import SocialMediaBar from '../components/SocialMediaBar'
-import ContactBar from '../components/SocialMediaBar copy'
+import ContactBar from '../components/ContactBar'
 import { Rubik } from 'next/font/google'
-import Homepage from './Homepage'
+import Homepage from '../components/Homepage'
 
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] })
