@@ -1,7 +1,8 @@
-import { Main, Greeting, Name, BigDescription, SmallDescription } from "./style"
+import style from "./style"
 import { Rubik } from 'next/font/google'
 
 const rubik = Rubik({ subsets: ['latin'] })
+const [Main, Greeting, Name, BigDescription, SmallDescription] = style
 
 export default function MainPage() {
     return (

@@ -34,4 +34,6 @@ const SmallDescription = styled.h1`
     font-weight: 400;
 `;
 
-export { Main, Greeting, Name, BigDescription, SmallDescription };
+const StyleComponents = [Main, Greeting, Name, BigDescription, SmallDescription]
+
+export default StyleComponents;
