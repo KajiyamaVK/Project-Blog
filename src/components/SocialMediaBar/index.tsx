@@ -1,17 +1,16 @@
-import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
-import { Main, IconContainer } from './style';
+import { Main, FormatedLink, GithubIcon, LinkedinIcon } from './style';
 
 export default function SocialMediaBar() {
-  return (
-    <Main>
-        <IconContainer>
-            <FiGithub/>
-        </IconContainer>
-        <IconContainer>
-            <FiLinkedin/>
-        </IconContainer>
-        <IconContainer>
-            <FiInstagram/>
-        </IconContainer>
-    </Main>
-  )};
+    return (
+        <Main>
+            <FormatedLink href="https://github.com/KajiyamaVK/" target='_blank'>
+                <GithubIcon />
+            </FormatedLink>
+
+            <FormatedLink href="https://www.linkedin.com/in/victor-kajiyama/" target='_blank'>
+                <LinkedinIcon />
+            </FormatedLink>
+
+        </Main>
+    )
+};

@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import Link from 'next/link';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { ReactElement, ReactNode } from 'react';
+
+
 
 const Main = styled.div`
     display: flex;
@@ -8,10 +13,6 @@ const Main = styled.div`
     left: 20px;
     font-size:30px;
     color: #ddd;
-    &:hover{
-        cursor: pointer;
-        color: #00bf63;
-    }
     &::after{
         content: "";
         display: block;
@@ -22,11 +23,32 @@ const Main = styled.div`
 }
 `;
 
+const FormatedLink = styled(Link)`
+    color: #ddd;
+    
+`;
+
 const IconContainer = styled.div`
+    margin: 5px 0;
     &:hover{
         cursor: pointer;
         color: #00bf63;
     }
 `;
 
-export { Main, IconContainer}
+type IconProps = {
+    icon: React.ComponentType<{ size?: number }>;
+    children?: ReactNode;
+};
+
+const Icon = ({ icon: IconComponent, children }: IconProps): ReactElement => (
+    <IconContainer>
+        <IconComponent />
+        {children}
+    </IconContainer>
+);
+
+const GithubIcon = () => <Icon icon={FiGithub} />;
+const LinkedinIcon = () => <Icon icon={FiLinkedin} />;
+
+export { Main, IconContainer, FormatedLink, GithubIcon, LinkedinIcon }

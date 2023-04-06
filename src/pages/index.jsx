@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Topbar from '../components/Topbar'
 import SocialMediaBar from '../components/SocialMediaBar'
+import ContactBar from '../components/SocialMediaBar copy'
 import { Rubik } from 'next/font/google'
+import Homepage from './Homepage'
+
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] })
 
@@ -16,7 +19,9 @@ export default function Home() {
         <link rel="icon" href="/imgs/logo.ico" />
       </Head>
       <Topbar />
+      <Homepage />
       <SocialMediaBar />
+      <ContactBar />
     </div>
   )
 }
