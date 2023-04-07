@@ -11,7 +11,7 @@ export default function Topbar() {
         <Main>
             <Logo src={logo} alt="logo" />
             <LinksContainer>
-                <LinkFormated number={1} linkLabel={"Início"} link="./" />
+                <LinkFormated number={1} linkLabel={"Início"} link="#Page1" />
                 <LinkFormated number={2} linkLabel={"Sobre"} link="./" />
                 <LinkFormated number={3} linkLabel={"Experiência"} link="./" />
                 <Button variant='outlined' color='success' sx={{
