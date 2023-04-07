@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-const Main = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; 
-    max-width: 1000px;
-    margin: 0 auto;
-    height: 70vh;
-    position: relative;
-    padding: 0 100px;
-`;
+// const Main = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: center; 
+//     max-width: 1000px;
+//     margin: 0 auto;
+//     height: 70vh;
+//     position: relative;
+//     padding: 0 100px;
+// `;
 
 
 const Greeting = styled.p`
@@ -34,4 +34,4 @@ const SmallDescription = styled.h1`
     font-weight: 400;
 `;
 
-export { Main, Greeting, Name, BigDescription, SmallDescription };
+export { Greeting, Name, BigDescription, SmallDescription };

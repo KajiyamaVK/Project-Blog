@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const Main = styled.div`
     margin: 40px 20px;
@@ -34,4 +35,8 @@ const LinkLabel = styled.span`
     color:#ddd
 `;
 
-export { Main, Number, LinkLabel }
+const LinkComponent = styled(Link)`
+    text-decoration: none;
+`;
+
+export { Main, Number, LinkLabel, LinkComponent }
