@@ -1,6 +1,7 @@
 import { Greeting, Name, BigDescription, SmallDescription } from "./style"
 import { Rubik } from 'next/font/google'
 
+// Import Google font
 const rubik = Rubik({ subsets: ['latin'] })
 
 export default function MainPage() {
@@ -14,3 +15,4 @@ export default function MainPage() {
         </div>
     )
 }
+

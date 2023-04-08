@@ -1,5 +1,4 @@
 interface iLink {
-    number: number,
     linkLabel: string,
     link: string
 }

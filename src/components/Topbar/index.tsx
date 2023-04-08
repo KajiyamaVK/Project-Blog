@@ -1,30 +1,25 @@
 import logo from '../../../public/imgs/logo.png'
-import { Main, LinksContainer, Logo, FiMenuIcon } from './style';
-import LinkFormated from './Links';
 import { Button } from '@mui/material';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 import Link from 'next/link';
+import Image from 'next/image';
+import { FiMenu } from 'react-icons/fi';
+import LinkFormated from './Links';
 
 export default function Topbar() {
-
     return (
-        <Main>
-            <Logo src={logo} alt="logo" />
-            <LinksContainer>
-                <LinkFormated number={1} linkLabel={"Início"} link="#Page1" />
-                <LinkFormated number={2} linkLabel={"Sobre"} link="./" />
-                <LinkFormated number={3} linkLabel={"Experiência"} link="./" />
-                <Button variant='outlined' color='success' sx={{
-                    height: '30px',
-                    fontSize: '15px',
-                    marginTop: '35px',
-                    marginRight: '20px'
-                }}>
+        <div className='bg-gray-800 flex flex-row w-100 h-100 justify-between '>
+            <Image src={logo} alt="Image" className='py-5 w-14 ml-6' />
+            <div className='mt-10 mr-8 text-white space-x-4  hidden md:flex'>
+                <LinkFormated link="#Page1" linkLabel='Início'/>
+                <LinkFormated link="./" linkLabel='Sobre'/>
+                <LinkFormated link="./" linkLabel='Experiência'/>
+                <Button variant='outlined' color='success' className='h-7'>
                     <AiOutlineCloudDownload style={{ marginRight: '10px' }} />
-                    <Link href='https://1drv.ms/b/s!Aomjw2eFWi_Ii7J1Q5VmUKKstQM9cg?e=YwXt7S' target='_blank' style={{ textDecoration: 'none', color: "#2e7d32" }}>Currículo</Link>
+                    <Link href='https://1drv.ms/b/s!Aomjw2eFWi_Ii7J1Q5VmUKKstQM9cg?e=YwXt7S' target='_blank' style={{ textDecoration: 'none', color: "#2e7d32" }} linkLabel='Currículo'/>
                 </Button>
-            </LinksContainer>
-            <FiMenuIcon />
-        </Main>
+            </div>
+            <FiMenu className='md:hidden text-3xl text-white mt-8 mr-8'/>
+        </div>
     )
 }
