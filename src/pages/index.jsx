@@ -4,7 +4,7 @@ import SocialMediaBar from '../components/BottomBars/SocialMediaBar';
 import ContactBar from '../components/BottomBars/ContactBar';
 import { Rubik } from 'next/font/google';
 import Homepage from '../pages/Homepage';
-import AboutMe from '../pages/AboutMe';
+import Aboutme from '../pages/Aboutme';
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] });
 
@@ -21,9 +21,9 @@ export default function Home() {
         <link rel="icon" href="/imgs/logo.ico" />
       </Head>
       <Topbar />
-      <div className="mx-fluid-2 flex items-start justify-center scroll-smooth flex-col">
+      <div className="mx-fluid-2 flex flex-col items-start justify-center scroll-smooth">
         <Homepage />
-        <AboutMe />
+        <Aboutme />
       </div>
       <SocialMediaBar />
       <ContactBar />

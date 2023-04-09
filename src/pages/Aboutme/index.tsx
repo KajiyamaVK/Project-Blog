@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import foto from '../../../public/imgs/foto.jpg';
 
-export default function AboutMe() {
+export default function Aboutme() {
   return (
     <div className="w-full">
       <h2 className="text-green-100 after:block after:h-0.5 after:w-2/4 after:bg-green-100">
@@ -16,7 +16,7 @@ export default function AboutMe() {
               alt="Foto"
               className="relative z-10 float-right mb-10 ml-5 hidden sm:block"
             />
-            <div className=" absolute -right-3 top-5 h-48 w-36 border-2 border-solid border-green-100  pb-3 pr-3 hidden sm:block"></div>
+            <div className=" absolute -right-3 top-5 hidden h-48 w-36 border-2 border-solid  border-green-100 pb-3 pr-3 sm:block"></div>
           </div>
           Olá, meu caro(a)! Meu nome é Victor Kajiyama, pai de um lindo menino
           chamado Isaac, e de 3 gartotões de quatro patas. Cristão de berço, sou
