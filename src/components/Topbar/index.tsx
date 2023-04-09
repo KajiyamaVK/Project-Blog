@@ -15,7 +15,7 @@ export default function Topbar() {
         <LinkFormated link="#Page1" linkLabel="Sobre" />
         <LinkFormated link="#Page1" linkLabel="Experiência" />
 
-        <Button variant="outlined" color="success" className="h-7">
+        <Button variant="contained" color="success" className="h-7">
           <AiOutlineCloudDownload className="mr-1" />
           <Link
             href="https://1drv.ms/b/s!Aomjw2eFWi_Ii7J1Q5VmUKKstQM9cg?e=YwXt7S"
