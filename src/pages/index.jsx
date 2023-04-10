@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/imgs/logo.ico" />
       </Head>
       <Topbar />
-      <div className="mx-fluid-2 flex flex-col items-start justify-center scroll-smooth">
+      <div className="mx-fluid-2 flex flex-col items-start justify-center scroll-smooth ">
         <Homepage />
         <Aboutme />
         <WorkExperience />
