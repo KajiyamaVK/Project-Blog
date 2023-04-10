@@ -5,7 +5,7 @@ const rubik = Rubik({ subsets: ['latin'] });
 
 export default function MainPage() {
   return (
-    <div id="Page1" className='mt-40 h-screen'>
+    <div id="Page1" className='mt-20 sm:mt-40 h-[80vh] small:h-screen'>
       <p className="text-green-600">Olá! Meu nome é</p>
       <h1 className=" text-fluid-2 text-green-100">Victor Kajiyama.</h1>
       <h1 className="text-fluid-1 text-green-400">Sou um arquiteto da web</h1>
