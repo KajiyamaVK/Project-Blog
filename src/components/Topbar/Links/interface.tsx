@@ -1,6 +1,6 @@
 interface iLink {
     linkLabel: string,
-    linkURL: string
+    To: string
 }
 
 export type { iLink };
