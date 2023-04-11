@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Timeline from '@/components/Timeline';
-import dotnetImg from '/public/imgs/stacks/dotnet.png';
-import sqlServerImg from '/public/imgs/stacks/mssqls.png';
-import react from '/public/imgs/stacks/react.png';
-import phpImg from '/public/imgs/stacks/php.png';
-import javascriptImg from '/public/imgs/stacks/javascript.jpg';
-import oracleImg from '/public/imgs/stacks/oracle.png';
+import dotnetImg from '../../../public/imgs/stacks/dotnet.png';
+import sqlServerImg from '../../../public/imgs/stacks/mssqls.png';
+import react from '../../../public/imgs/stacks/react.png';
+import phpImg from '../../../public/imgs/stacks/php.png';
+import javascriptImg from '../../../public/imgs/stacks/javascript.jpg';
+import oracleImg from '../../../public/imgs/stacks/oracle.png';
 
 export default function WorkExperience() {
   return (
@@ -50,8 +50,8 @@ export default function WorkExperience() {
           </Timeline>
 
           <Timeline index={1} image="gtplan" date="10/2021 - 01/2023">
-            Arquitetava e desenvolvia (Fullstack) os novas ferramentas da plataforma no
-            módulo <b>B2B</b>. 
+            Arquitetava e desenvolvia (Fullstack) os novas ferramentas da
+            plataforma no módulo <b>B2B</b>.
             <p className="mt-3 text-xs">
               <i>Utilizou:</i>
             </p>
