@@ -50,7 +50,7 @@ export default function WorkExperience() {
           </Timeline>
 
           <Timeline index={1} image="gtplan" date="10/2021 - 01/2023">
-            Arquitetava e desenvolvia (Fullstack) os novas ferramentas da
+            Arquitetava e desenvolvia (Fullstack) as novas ferramentas da
             plataforma no módulo <b>B2B</b>.
             <p className="mt-3 text-xs">
               <i>Utilizou:</i>
@@ -103,10 +103,15 @@ export default function WorkExperience() {
               />
             </div>
           </Timeline>
-          <div className='mt-48'>
+          <div className="mt-48">
             <p className="text-green-100">
               Para uma versão mais detalhada, acesse o{' '}
-              <Link href="https://linkedin/in/victor-kajiyama" className='underline'>Linkedin</Link>
+              <Link
+                href="https://linkedin/in/victor-kajiyama"
+                className="underline"
+              >
+                Linkedin
+              </Link>
             </p>
           </div>
         </div>
