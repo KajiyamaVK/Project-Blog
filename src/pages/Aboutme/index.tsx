@@ -73,7 +73,7 @@ export default function Aboutme() {
               className="relative z-10 float-right mb-10 ml-5 hidden sm:block "
             />
             Olá, meu caro(a)! Meu nome é Victor Kajiyama, pai de um lindo menino
-            chamado Isaac, e de 3 gartotões de quatro patas. Cristão de berço,
+            chamado Isaac, e de 3 garotões de quatro patas. Cristão de berço,
             sou casado com a Mariana. <br />
             <br />
             Sou desenvolvedor desde 2015. Até chegar lá percorri uma suada
