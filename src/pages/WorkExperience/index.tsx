@@ -79,7 +79,7 @@ export default function WorkExperience() {
               <i>Utilizou:</i>
             </p>
             <div className="flex justify-evenly rounded-s border-y-2 border-solid border-gray-300 p-2">
-              <Image src={phpImg} alt="dotnet logo" width={45} height={45} />
+              <Image src={dotnetImg} alt="dotnet logo" width={45} height={45} />
               <Image
                 src={sqlServerImg}
                 alt="sqlserver logo"
