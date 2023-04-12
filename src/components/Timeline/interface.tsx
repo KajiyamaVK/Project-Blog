@@ -7,6 +7,7 @@ import { ReactNode } from "react";
 
 export default interface Props {
   isCurrent?: boolean;
+  isLast?: boolean;
   image: string;
   index: number;
   date?: string;

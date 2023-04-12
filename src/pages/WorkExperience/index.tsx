@@ -73,21 +73,42 @@ export default function WorkExperience() {
           </Timeline>
 
           <Timeline index={2} image="linx" date="07/2012 - 12/2015">
-            Trabalhou como desenvolvedor fullstack na vertical de{' '}
-            <b>consórcios</b>
+            Trabalhou como desenvolvedor fullstack na vertical de grandes lojas
+            de varejo
             <p className="mt-3 text-xs">
               <i>Utilizou:</i>
             </p>
             <div className="flex justify-evenly rounded-s border-y-2 border-solid border-gray-300 p-2">
               <Image src={phpImg} alt="dotnet logo" width={45} height={45} />
               <Image
-                src={oracleImg}
+                src={sqlServerImg}
                 alt="sqlserver logo"
                 width={45}
                 height={45}
               />
             </div>
           </Timeline>
+
+          <Timeline index={3} image="alterdata" date="07/2012 - 12/2015" isLast>
+            Consultor ERP para médias empresas e indústrias.
+            <p className="mt-3 text-xs">
+              <i>Utilizou:</i>
+            </p>
+            <div className="flex justify-evenly rounded-s border-y-2 border-solid border-gray-300 p-2">
+              <Image
+                src={sqlServerImg}
+                alt="sqlserver logo"
+                width={45}
+                height={45}
+              />
+            </div>
+          </Timeline>
+          <div className='mt-48'>
+            <p className="text-green-100">
+              Para uma versão mais detalhada, acesse o{' '}
+              <Link href="https://linkedin/in/victor-kajiyama" className='underline'>Linkedin</Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>

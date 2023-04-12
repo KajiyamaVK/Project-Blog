@@ -22,11 +22,50 @@ export default function Aboutme() {
 
   return (
     <div id="Aboutme" className="mt-28 w-full xl:mt-0">
-      <div className="mx-auto max-w-5xl">
+      <div className="relative mx-auto max-w-5xl">
         <h2 className="text-green-100 after:block after:h-0.5 after:w-3/4 after:bg-green-100 md:after:w-1/4">
           Sobre Mim
         </h2>
-        <div className="relative mx-0 flex flex-col justify-center border-2 py-10 sm:mx-5 sm:mt-10 sm:border-solid sm:border-green-100 sm:px-10">
+        <Image
+          src={foto}
+          alt="Foto"
+          className=" 
+            mx-auto
+            my-10 
+            shadow-lg
+            shadow-black 
+            sm:block 
+            md:hidden"
+        />
+        <div
+          className=" absolute 
+                      left-20
+                      top-28
+                      -z-10
+                      h-48
+                      w-36 
+                      justify-center  
+                      border-2 
+                    border-solid 
+                      border-green-100
+                      px-10
+                      md:hidden"
+        ></div>
+
+        <div
+          className="relative 
+                     mx-0 
+                     flex 
+                     flex-col 
+                     justify-center 
+                     border-2 
+                     py-10 
+                     sm:mx-5 
+                     sm:mt-10 
+                     sm:border-solid 
+                     sm:border-green-100 
+                     sm:px-10"
+        >
           <p className="text-align-left relative w-full text-sm text-green-100 ">
             <Image
               src={foto}

@@ -7,6 +7,7 @@ import { Rubik } from 'next/font/google';
 import Homepage from '../pages/Homepage';
 import Aboutme from '../pages/Aboutme';
 import WorkExperience from '../pages/WorkExperience';
+import LastBar from '../components/LastBar';
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] });
 
@@ -47,7 +48,7 @@ export default function Home() {
         <link rel="icon" href="/imgs/logo.ico" />
       </Head>
       <Topbar />
-      <div className="mx-fluid-2 flex flex-col justify-center">
+      <div className="mx-fluid-2 flex flex-col justify-center overflow-hidden">
         <div className="opacity-0 relative " ref={HomepageRef}>
           <Homepage />
         </div>
@@ -63,6 +64,7 @@ export default function Home() {
       </div>
       <SocialMediaBar />
       <ContactBar />
+      <LastBar/>
     </div>
   );
 }
