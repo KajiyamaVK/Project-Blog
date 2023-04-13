@@ -3,36 +3,17 @@ import { Button } from '@mui/material';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 import Link from 'next/link';
 import Image from 'next/image';
-import LinkFormated from './Links';
+import { LinkFormated, links } from './Links';
 import { LinksProps } from './interface';
 import DrawerComponent from './Drawer';
 
 export default function Topbar() {
-  const links: LinksProps[] = [
-    {
-      linkURL: 'Homepage',
-      label: 'Home',
-    },
-    {
-      linkURL: 'Aboutme',
-      label: 'Sobre',
-    },
-    {
-      linkURL: 'Experience',
-      label: 'Experiência',
-    },
-  ];
-
   return (
     <div className="w-100 h-100 sticky top-0 z-50 flex flex-row justify-between bg-gray-800">
       <Image src={logo} alt="Image" className="ml-6 w-14 py-5" />
-      <div className="mr-8 mt-10 hidden space-x-4 absolute right-0 text-white md:flex">
+      <div className="absolute right-0 mr-8 mt-10 hidden space-x-4 text-white md:flex">
         {links.map((link: LinksProps, index: number) => (
-          <LinkFormated
-            key={index}
-            To={link.linkURL}
-            linkLabel={link.label}
-          />
+          <LinkFormated key={index} To={link.linkURL} linkLabel={link.label} />
         ))}
 
         <Button

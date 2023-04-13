@@ -2,7 +2,7 @@ import Card from '@/components/Cards';
 
 export default function Qualities() {
   return (
-    <div className="flex flex-col">
+    <div id="Qualities" className="flex flex-col">
       <h2 className="mt-20 text-green-100 after:block after:h-0.5 after:w-3/4 after:bg-green-100 md:after:w-1/4">
         Premissas de trabalho
       </h2>
@@ -24,7 +24,9 @@ export default function Qualities() {
           se manter relevante, o aprendizado contínuo não é opcional.
         </Card>
         <Card title="Stay Relevant" image="relevant">
-          O ato da programação é apenas a ponta de um gigante iceberg. Negócios, planejamento, comunicação, etc. Tudo isso é necessário para que o PRODUTO exista.
+          O ato da programação é apenas a ponta de um gigante iceberg. Negócios,
+          planejamento, comunicação, etc. Tudo isso é necessário para que o
+          PRODUTO exista.
         </Card>
       </div>
     </div>

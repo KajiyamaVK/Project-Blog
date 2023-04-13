@@ -2,15 +2,16 @@ import { useState } from 'react';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { Mail, Inbox } from '@mui/icons-material';
 import { FiMenu } from 'react-icons/fi';
+import { links, socialLinks } from '../Links';
+import { scrollTo } from '@/Functions';
+import { linkClasses } from '@mui/material';
 
 export default function TemporaryDrawer() {
   const [isOpen, setOpen] = useState(false);
@@ -35,27 +36,25 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
+      <p className="ml-3 mt-3">Páginas</p>
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <Inbox /> : <Mail />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
+        {links.map((link) => (
+          <ListItem key={link.label} disablePadding>
+            <ListItemButton onClick={() => scrollTo(link.linkURL)}>
+              <ListItemIcon>{link.icon}</ListItemIcon>
+              <ListItemText primary={link.label} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <Divider />
+      <p className="ml-3 mt-3">Social</p>
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {socialLinks.map((link) => (
+          <ListItem key={link.label} disablePadding>
             <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <Inbox /> : <Mail />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemIcon>{link.icon}</ListItemIcon>
+              <ListItemText primary={link.label} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -65,15 +64,13 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      <React.Fragment key={'right'}>
         <FiMenu
           onClick={toggleDrawer(true)}
-          className="mr-8 mt-8 text-3xl text-white md:hidden cursor-pointer"
+          className="mr-8 mt-8 cursor-pointer text-3xl text-white md:hidden"
         />
         <Drawer anchor="right" open={isOpen} onClose={toggleDrawer(false)}>
           {list()}
         </Drawer>
-      </React.Fragment>
     </div>
   );
 }
