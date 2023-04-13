@@ -40,3 +40,22 @@ h1 {
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
+
+@keyframes fly-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fly-in {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+

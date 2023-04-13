@@ -8,6 +8,7 @@ import Homepage from '../pages/Homepage';
 import Aboutme from '../pages/Aboutme';
 import WorkExperience from '../pages/WorkExperience';
 import LastBar from '../components/LastBar';
+import Qualities from '../pages/Qualities';
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] });
 
@@ -15,6 +16,7 @@ export default function Home() {
   const HomepageRef = useRef(null);
   const ExperienceRef = useRef(null);
   const AboutMeRef = useRef(null);
+  const QualitiesRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -34,6 +36,7 @@ export default function Home() {
     if (HomepageRef.current) observer.observe(HomepageRef.current);
     if (ExperienceRef.current) observer.observe(ExperienceRef.current);
     if (AboutMeRef.current) observer.observe(AboutMeRef.current);
+    if (QualitiesRef.current) observer.observe(QualitiesRef.current);
   }, []);
 
   return (
@@ -49,22 +52,26 @@ export default function Home() {
       </Head>
       <Topbar />
       <div className="mx-fluid-2 flex flex-col justify-center overflow-hidden">
-        <div className="opacity-0 relative " ref={HomepageRef}>
+        <div className="relative opacity-0 " ref={HomepageRef}>
           <Homepage />
         </div>
 
-        <div className="opacity-0 relative" ref={AboutMeRef}>
+        <div className="relative opacity-0" ref={AboutMeRef}>
           <Aboutme />
         </div>
 
-        <div className="opacity-0 relative" ref={ExperienceRef}>
+        <div className="relative opacity-0" ref={ExperienceRef}>
           <WorkExperience />
         </div>
-        <div className='h-96'></div>
+
+        <div className="relative opacity-0" ref={QualitiesRef}>
+          <Qualities />
+        </div>
+        <div className="h-96"></div>
       </div>
       <SocialMediaBar />
       <ContactBar />
-      <LastBar/>
+      <LastBar />
     </div>
   );
 }
