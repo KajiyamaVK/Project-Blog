@@ -2,7 +2,7 @@ import Props from './interface';
 import Image from 'next/image';
 
 export default function Card(props: Props) {
-  const imgSrc = `/imgs/cards/${props.image}.png`;
+  const imgSrc = `/imgs/Cards/${props.image}.png`;
 
   return (
     <div className="m-10 flex max-w-sm">
