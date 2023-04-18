@@ -13,6 +13,14 @@ import thumbnailImage from '../../public/imgs/ThumbImg.png';
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] });
 
+async function getStaticProps() {
+  return {
+    props: {
+      thumbImg: thumbnailImage,
+    },
+  };
+}
+
 export default function Home() {
   const HomepageRef = useRef(null);
   const ExperienceRef = useRef(null);
@@ -57,13 +65,13 @@ export default function Home() {
         />
 
         {/* Image to display in the thumbnails */}
-        <meta property="og:image" itemProp="image" content={thumbnailImage} />
+        <meta property="og:image" itemProp="image" content={thumbImg} />
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
 
         {/* Any size bigger than 300px will not work on Whatsapp */}
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
+        {/* <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" /> */}
 
         {/* URL to visit when clicking on the thumbnail */}
         <meta property="og:url" content="https://fullstacker.com.br" />
