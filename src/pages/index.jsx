@@ -9,6 +9,7 @@ import Aboutme from '../pages/Aboutme';
 import WorkExperience from '../pages/WorkExperience';
 import LastBar from '../components/LastBar';
 import Qualities from '../pages/Qualities';
+import thumbnailImage from '../../public/imgs/ThumbImg.png';
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] });
 
@@ -56,7 +57,7 @@ export default function Home() {
         />
 
         {/* Image to display in the thumbnails */}
-        <meta property="og:image" itemProp="image" content="/imgs/logo.png" />
+        <meta property="og:image" itemProp="image" content={thumbnailImage} />
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
 
