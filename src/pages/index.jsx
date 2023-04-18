@@ -58,9 +58,8 @@ export default function Home() {
 
         {/* facebook required an app_id to work, but it is not necessary for Whatsapp */}
         <meta property="fb:app_id" content="130336143268909" />
-        
+
         {/* DIsplay site name, title and description */}
-        <meta property="og:site_name" content="Victor Kajiyama - Fullstacker" />
         <meta property="og:title" content="Seu website por BAIXO CUSTO" />
         <meta
           property="og:description"
@@ -71,7 +70,7 @@ export default function Home() {
         <meta
           property="og:image"
           itemProp="image"
-          content="https://fullstacker.com.br/imgs/thumbImg.png"
+          content="https://fullstacker.com.br/imgs/thumbImg.jpg"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
