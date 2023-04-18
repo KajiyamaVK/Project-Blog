@@ -9,7 +9,7 @@ import Aboutme from '../pages/Aboutme';
 import WorkExperience from '../pages/WorkExperience';
 import LastBar from '../components/LastBar';
 import Qualities from '../pages/Qualities';
-import thumbnailImage from '../../public/imgs/ThumbImg.png';
+import thumbnailImage from '../../public/imgs/thumbImg.png';
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] });
 
