@@ -9,17 +9,16 @@ import Aboutme from '../pages/Aboutme';
 import WorkExperience from '../pages/WorkExperience';
 import LastBar from '../components/LastBar';
 import Qualities from '../pages/Qualities';
-import thumbnailImage from '../../public/imgs/thumbImg.png';
 
 const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] });
 
-async function getStaticProps() {
-  return {
-    props: {
-      thumbImg: thumbnailImage,
-    },
-  };
-}
+// async function getStaticProps() {
+//   return {
+//     props: {
+//       thumbImg: thumbnailImage,
+//     },
+//   };
+// }
 
 export default function Home() {
   const HomepageRef = useRef(null);
@@ -65,7 +64,11 @@ export default function Home() {
         />
 
         {/* Image to display in the thumbnails */}
-        <meta property="og:image" itemProp="image" content={thumbImg} />
+        <meta
+          property="og:image"
+          itemProp="image"
+          content="/imgs/thumbImg.png"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
 
