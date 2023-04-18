@@ -55,6 +55,10 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#ffffff" />
 
         {/* Facebook and Whatsapp Metatags */}
+
+        {/* facebook required an app_id to work, but it is not necessary for Whatsapp */}
+        <meta property="fb:app_id" content="130336143268909" />
+        
         {/* DIsplay site name, title and description */}
         <meta property="og:site_name" content="Victor Kajiyama - Fullstacker" />
         <meta property="og:title" content="Seu website por BAIXO CUSTO" />
