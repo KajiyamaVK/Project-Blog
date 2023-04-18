@@ -67,7 +67,7 @@ export default function Home() {
         <meta
           property="og:image"
           itemProp="image"
-          content="/imgs/thumbImg.png"
+          content="https://fullstacker.com.br/imgs/thumbImg.png"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
