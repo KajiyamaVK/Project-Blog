@@ -6,7 +6,7 @@ export default function Qualities() {
       <h2 className="mt-20 text-green-100 after:block after:h-0.5 after:w-3/4 after:bg-green-100 md:after:w-1/4">
         Premissas de trabalho
       </h2>
-      <div className="mx-auto flex max-w-8xl flex-wrap justify-evenly p-10">
+      <div className="mx-auto  flex max-w-8xl flex-wrap justify-evenly">
         <Card title="Fácil" image="clean">
           Adepto das boas práticas do Clean Code, o código é sempre feito para
           programadores e nunca apenas para máquinas.

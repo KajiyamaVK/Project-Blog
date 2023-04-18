@@ -5,7 +5,7 @@ export default function Card(props: Props) {
   const imgSrc = `/imgs/Cards/${props.image}.png`;
 
   return (
-    <div className="m-10 flex max-w-sm">
+    <div className="my-10 flex max-w-sm">
       {/* Card */}
       <div className="group relative flex flex-col overflow-hidden rounded-bl-3xl rounded-br-md rounded-tl-md rounded-tr-3xl bg-green-800 transition-all  duration-[0.5s] hover:scale-105 hover:shadow-lg hover:shadow-black focus:scale-105 focus:shadow-lg focus:shadow-black">
         {/* Image */}
