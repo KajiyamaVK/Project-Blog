@@ -1,9 +1,14 @@
-import '@/styles/globals.css'
-import { ParallaxProvider } from 'react-scroll-parallax'
+import '@/styles/globals.css';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import Topbar from '@/components/Topbar';
 
 export default function App({ Component, pageProps }) {
   return (
-    <ParallaxProvider>
-      <Component {...pageProps} />
-    </ParallaxProvider>)
+    <div>
+      <Topbar />
+      <ParallaxProvider>
+        <Component {...pageProps} />
+      </ParallaxProvider>
+    </div>
+  );
 }

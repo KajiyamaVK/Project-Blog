@@ -21,7 +21,7 @@ export default function Aboutme() {
   ];
 
   return (
-    <div id="Aboutme" className="mt-28 w-full xl:mt-0">
+    <div id="Aboutme" className="mt-28 w-full xl:mt-20">
       <div className="relative mx-auto max-w-5xl">
         <h2 className="text-green-100 after:block after:h-0.5 after:w-3/4 after:bg-green-100 md:after:w-1/4">
           Sobre Mim

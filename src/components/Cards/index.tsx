@@ -20,7 +20,7 @@ export default function Card(props: Props) {
         {/* Content */}
         <div className="p-5 text-gray-100">
           {/* Title */}
-          <div className="group-hover:shadow-lg group-hover:duration-100 transition-transform ease-in-out card_title absolute right-0 top-3 z-[1] h-auto w-[90%] origin-[left_top] rotate-[-3.3deg] overflow-hidden rounded-[5px_0_0_5px] bg-green-900 p-2 text-[1.325rem] font-semibold text-white group-hover:scale-125">
+          <div className="card_title absolute right-0 top-3 z-[1] h-auto w-[90%] origin-[left_top] rotate-[-3.3deg] overflow-hidden rounded-[5px_0_0_5px] bg-green-900 p-2 text-[1.325rem] font-semibold text-white transition-transform ease-in-out group-hover:scale-125 group-hover:shadow-lg group-hover:duration-100">
             {props.title}
           </div>
           {/* Text */}
