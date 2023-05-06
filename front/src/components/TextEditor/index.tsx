@@ -17,7 +17,7 @@ import { Button } from '@mui/material';
 
 // type ProgressFunction = (percent: number, file: { name: string }) => void;
 // type SucessFunction = (uploadedFiles: { name: string; src: string }[]) => void;
-// type FailFunction = (failedFile: { name: string; src?: string }) => void;
+// type FailFunction = (failedFile: { name: string; src?: string }) => void
 
 export default function TextEditor(): JSX.Element {
   const [editorState, setEditorState] = useState(() =>
