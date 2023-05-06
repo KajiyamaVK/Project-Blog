@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import foto from '../../../public/imgs/foto.jpg';
 import ListWithTitle from '@/components/ListWithTitle';
+import CarouselComponent from '@/components/Carousel';
+import { differentialsCarousel } from '@/components/Carousel/data';
 
 export default function Aboutme() {
   const languagesList = [
@@ -98,6 +100,8 @@ export default function Aboutme() {
             <ListWithTitle title="Linguagens" list={languagesList} />
             <ListWithTitle title="Metodologias" list={methodologiesList} />
           </div>
+
+          <CarouselComponent data={differentialsCarousel} />
         </div>
       </div>
     </div>

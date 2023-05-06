@@ -10,7 +10,8 @@ interface iIcon {
 
 export default function Icon(props: iIcon): ReactElement {
   let icon;
-  let classes: string = 'mb-2 cursor-pointer  text-gray-100 hover:text-green-400 transition-colors duration-300 ';
+  let classes: string =
+    'mb-2 cursor-pointer  text-gray-100 hover:text-green-400 transition-colors duration-300 ';
   switch (props.iconName) {
     case 'github':
       icon = (
@@ -28,14 +29,14 @@ export default function Icon(props: iIcon): ReactElement {
       break;
     case 'whatsapp':
       icon = (
-        <Link href="https://wa.me/+5511988269888">
+        <Link href="https://wa.me/+551132306847">
           <BsWhatsapp className={classes} />
         </Link>
       );
       break;
     case 'email':
       icon = (
-        <Link href="mailto:victor.kajiyama@gmail.com">
+        <Link href="mailto:victor.kajiyama@fullstacker.com.br">
           <HiOutlineMail className={classes} />
         </Link>
       );

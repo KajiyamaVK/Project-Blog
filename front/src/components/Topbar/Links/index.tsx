@@ -41,12 +41,12 @@ const socialLinks: LinksProps[] = [
     icon: <AiFillLinkedin />,
   },
   {
-    linkURL: 'https://wa.me/5511988269888',
+    linkURL: 'https://wa.me/+551132306847',
     label: 'Whatsapp',
     icon: <RiWhatsappFill />,
   },
   {
-    linkURL: 'mailto:victor.kajiyama@gmail.com',
+    linkURL: 'mailto:victor.kajiyama@fullstacker.com.br',
     label: 'E-mail',
     icon: <MdEmail />,
   },
