@@ -82,7 +82,6 @@ export default function TextEditor(): JSX.Element {
           <Editor
             editorState={editorState}
             onChange={setEditorState}
-            //blockStyleFn={BlockStyleStyling}
             onTab={onTab}
           />
         </div>
