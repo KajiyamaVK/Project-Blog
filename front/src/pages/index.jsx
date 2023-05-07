@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import { useEffect, useRef } from 'react';
-import Topbar from '../components/Topbar';
-import SocialMediaBar from '../components/BottomBars/SocialMediaBar';
-import ContactBar from '../components/BottomBars/ContactBar';
+import SocialMediaBar from '@/components/Navigation/BottomBars/SocialMediaBar';
+import ContactBar from '../components/Navigation/BottomBars/ContactBar';
 import { Rubik } from 'next/font/google';
 import Homepage from '../pages/Homepage';
 import Aboutme from '../pages/Aboutme';
