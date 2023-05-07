@@ -101,7 +101,7 @@ export default function Aboutme() {
             <ListWithTitle title="Metodologias" list={methodologiesList} />
           </div>
 
-          <CarouselComponent data={differentialsCarousel} />
+          {/* <CarouselComponent data={differentialsCarousel} /> */}
         </div>
       </div>
     </div>
