@@ -15,28 +15,31 @@ export default function Icon(props: iIcon): ReactElement {
   switch (props.iconName) {
     case 'github':
       icon = (
-        <Link href="https://github.com/KajiyamaVK/">
+        <Link href="https://github.com/KajiyamaVK/" target="_blank">
           <FiGithub className={classes} />
         </Link>
       );
       break;
     case 'linkedin':
       icon = (
-        <Link href="https://www.linkedin.com/in/victor-kajiyama/">
+        <Link
+          href="https://www.linkedin.com/in/victor-kajiyama/"
+          target="_blank"
+        >
           <FiLinkedin className={classes} />
         </Link>
       );
       break;
     case 'whatsapp':
       icon = (
-        <Link href="https://wa.me/+551132306847">
+        <Link href="https://wa.me/+551132306847" target="_blank">
           <BsWhatsapp className={classes} />
         </Link>
       );
       break;
     case 'email':
       icon = (
-        <Link href="mailto:victor.kajiyama@fullstacker.com.br">
+        <Link href="mailto:victor.kajiyama@fullstacker.com.br" target="_blank">
           <HiOutlineMail className={classes} />
         </Link>
       );
