@@ -1,33 +1,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import foto from '../../../public/imgs/foto.jpg';
-import ListWithTitle from '@/components/ListWithTitle';
 import CarouselComponent from '@/components/Carousel';
+import CaroulselStacks from '@/components/CarouselStacks';
 import { differentialsCarousel } from '@/components/Carousel/data';
+import { Paper } from '@mui/material';
 
 export default function Aboutme() {
-  const languagesList = [
-    'Javascript (NextJS / Typescript)',
-    '.NET Core',
-    'SQL (Oracle PL-SQL / SQL Server T-SQL)',
-    'HTML',
-    'CSS (Styled-Components / Tailwind / CSS Modules)',
-  ];
-  const methodologiesList = [
-    'Git',
-    'CD & CI',
-    'Testes (Jest & xUnit)',
-    'Metodologias Ágeis',
-    'Clean Code',
-    'SOLID',
-  ];
-
   return (
     <div id="Aboutme" className="mt-28 w-full xl:mt-20">
-      <div className="relative mx-auto max-w-5xl">
-        <h2 className="text-green-100 after:block after:h-0.5 after:w-3/4 after:bg-green-100 md:after:w-1/4">
-          Sobre Mim
-        </h2>
+      <div className="300 relative mx-auto max-w-5xl">
+        <div className="w-fit">
+          <h1 className="text-green-100 after:block after:h-0.5 after:w-3/4 after:bg-green-100 md:after:w-full">
+            SOBRE MIM
+          </h1>
+        </div>
         <Image
           src={foto}
           alt="Foto"
@@ -53,7 +40,6 @@ export default function Aboutme() {
                       px-10
                       md:hidden"
         ></div>
-
         <div
           className="relative 
                      mx-0 
@@ -92,16 +78,27 @@ export default function Aboutme() {
             Sou apaixonado por programação e tecnologia! Adoro estar sempre a
             par das coisas novas que estão em hype na boca dos Devs de plantão.
             <br /> <br />
-            Atualmente trabalho com: <br />
-            <br />
           </p>
           <div className=" absolute right-5 top-16 hidden h-48 w-36 border-2 border-solid  border-green-100 pb-3 pr-3 sm:block "></div>
-          <div className="flex flex-wrap justify-between">
-            <ListWithTitle title="Linguagens" list={languagesList} />
-            <ListWithTitle title="Metodologias" list={methodologiesList} />
-          </div>
+        </div>
+        <CaroulselStacks />
+        <div className=" mx-2/3 mx-0 mt-10 flex w-full flex-wrap justify-evenly gap-y-5">
+          <Paper className="w-[400px] rounded-lg bg-gray-100" elevation={10}>
+            <CarouselComponent
+              mainTitle={differentialsCarousel.mainTitle}
+              data={differentialsCarousel.data}
+            />
+          </Paper>
 
-          {/* <CarouselComponent data={differentialsCarousel} /> */}
+          {/* <Paper
+            className="elevation={4} w-[400px] rounded-lg bg-gray-100"
+            elevation={10}
+          >
+            <CarouselComponent
+              mainTitle={differentialsCarousel.mainTitle}
+              data={differentialsCarousel.data}
+            />
+          </Paper> */}
         </div>
       </div>
     </div>

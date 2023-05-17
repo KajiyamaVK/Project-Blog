@@ -31,14 +31,6 @@ const links: iLinks[] = [
       icon: <MdWorkHistory />,
     },
   },
-  {
-    name: 'Qualities',
-    linkData: {
-      linkURL: 'Qualities',
-      label: 'Premissas de trabalho',
-      icon: <GiRoundStar />,
-    },
-  },
 ];
 
 const socialLinks: iLinks[] = [

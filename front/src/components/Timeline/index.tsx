@@ -1,6 +1,6 @@
 import Props from './interface';
 import Image from 'next/image';
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 
 export default function Timeline(props: Props) {
   const [isHovering, setIsHovered] = useState(false);
@@ -8,8 +8,7 @@ export default function Timeline(props: Props) {
   const lineColor =
     props.isCurrent === true ? 'after:bg-gray-100' : 'after:bg-sky-400';
 
-  const LastlineColor =
-    props.isLast === true ? 'before:bg-gray-100' : '';
+  const LastlineColor = props.isLast === true ? 'before:bg-gray-100' : '';
 
   const imgSrc = `/imgs/Logos_Empresas/${props.image}.png`;
   const descLineSide =

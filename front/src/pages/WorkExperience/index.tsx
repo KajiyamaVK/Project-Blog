@@ -12,9 +12,11 @@ export default function WorkExperience() {
   return (
     <div id="Experience" className="mt-28 w-full">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-green-100 after:block after:h-0.5 after:w-3/4 after:bg-green-100 md:after:w-1/4">
-          Timeline de Experiência
-        </h2>
+        <div className="w-fit">
+          <h2 className="text-green-100 after:block after:h-0.5 after:w-full after:bg-green-100 ">
+            TIMELINE PROFISSIONAL
+          </h2>
+        </div>
         <div className="relative mx-0 flex flex-col justify-center border-2 py-10 sm:mx-5 sm:mt-10 sm:px-10">
           <p className="text-align-left relative w-full text-sm text-green-100 ">
             Algumas empresas que, com muito orgulho, já tive a oportunidade de

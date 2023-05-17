@@ -2,29 +2,19 @@ import Head from 'next/head';
 import { useEffect, useRef } from 'react';
 import SocialMediaBar from '@/components/Navigation/BottomBars/SocialMediaBar';
 import ContactBar from '../components/Navigation/BottomBars/ContactBar';
-import { Rubik } from 'next/font/google';
+import { Raleway } from 'next/font/google';
 import Homepage from '../pages/Homepage';
 import Aboutme from '../pages/Aboutme';
 import WorkExperience from '../pages/WorkExperience';
 import LastBar from '../components/LastBar';
-import Qualities from '../pages/Qualities';
 import MetaTags from '@/components/MetaTags';
 
-const rubik = Rubik({ subsets: ['latin'], weights: [400, 500, 700] });
-
-// async function getStaticProps() {
-//   return {
-//     props: {
-//       thumbImg: thumbnailImage,
-//     },
-//   };
-// }
+const font = Raleway({ subsets: ['latin'], weights: [400, 500, 700] });
 
 export default function Home() {
   const HomepageRef = useRef(null);
   const ExperienceRef = useRef(null);
   const AboutMeRef = useRef(null);
-  const QualitiesRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -44,11 +34,10 @@ export default function Home() {
     if (HomepageRef.current) observer.observe(HomepageRef.current);
     if (ExperienceRef.current) observer.observe(ExperienceRef.current);
     if (AboutMeRef.current) observer.observe(AboutMeRef.current);
-    if (QualitiesRef.current) observer.observe(QualitiesRef.current);
   }, []);
 
   return (
-    <div className={rubik.className}>
+    <div className={font.className}>
       <Head>
         <title>Victor Kajiyama</title>
         <MetaTags />
@@ -66,10 +55,6 @@ export default function Home() {
 
         <div className="relative opacity-0" ref={ExperienceRef}>
           <WorkExperience />
-        </div>
-
-        <div className="relative opacity-0" ref={QualitiesRef}>
-          <Qualities />
         </div>
         <div className="h-96"></div>
       </div>
