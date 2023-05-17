@@ -5,6 +5,5 @@ export interface iCarouselData {
 }
 
 export interface iCarouselProps {
-  mainTitle: string;
   data: iCarouselData[];
 }

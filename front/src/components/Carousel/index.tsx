@@ -2,7 +2,6 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { iCarouselProps } from './interface';
 import Image from 'next/image';
-import { differentialsCarousel } from './data';
 
 /**
  * @name CarouselComponent
@@ -11,7 +10,7 @@ import { differentialsCarousel } from './data';
  * @param {string} mainTitle Título principal do carrossel
  */
 
-export default function CarouselComponent({ mainTitle, data }: iCarouselProps) {
+export default function CarouselComponent({ data }: iCarouselProps) {
   return (
     <div>
       <Carousel
@@ -24,7 +23,7 @@ export default function CarouselComponent({ mainTitle, data }: iCarouselProps) {
         transitionTime={500}
         stopOnHover={false}
         swipeable={true}
-        dynamicHeight={false} // Set dynamicHeight to true
+        dynamicHeight={false}
         emulateTouch={true}
         useKeyboardArrows={false}
         centerMode={false}

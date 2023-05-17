@@ -84,10 +84,7 @@ export default function Aboutme() {
         <CaroulselStacks />
         <div className=" mx-2/3 mx-0 mt-10 flex w-full flex-wrap justify-evenly gap-y-5">
           <Paper className="w-[400px] rounded-lg bg-gray-100" elevation={10}>
-            <CarouselComponent
-              mainTitle={differentialsCarousel.mainTitle}
-              data={differentialsCarousel.data}
-            />
+            <CarouselComponent data={differentialsCarousel} />
           </Paper>
 
           {/* <Paper
