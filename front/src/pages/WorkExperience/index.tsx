@@ -2,11 +2,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Timeline from '@/components/Timeline';
 import dotnetImg from '/public/imgs/Stacks/dotnet.png';
-import sqlServerImg from '/public/imgs/Stacks/mssqls.png';
-import react from '/public/imgs/Stacks/react.png';
+import sqlServerImg from '/public/imgs/Stacks/mssqls.jpg';
+import react from '/public/imgs/Stacks/react.jpg';
 import phpImg from '/public/imgs/Stacks/php.png';
 import javascriptImg from '/public/imgs/Stacks/javascript.jpg';
-import oracleImg from '/public/imgs/Stacks/oracle.png';
+import oracleImg from '/public/imgs/Stacks/oracle.jpg';
 
 export default function WorkExperience() {
   return (

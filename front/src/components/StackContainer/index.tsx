@@ -12,10 +12,7 @@ export default function StackContainer({
   hexColor,
 }: IStackContainer) {
   return (
-    <div
-      className="inline-block rounded-lg p-2  shadow-xl drop-shadow-xl "
-      style={{ backgroundColor: hexColor }}
-    >
+    <div className="m-2 inline-block rounded-lg  shadow-xl drop-shadow-xl ">
       <Image height={45} width={45} src={src} alt={alt} />
     </div>
   );

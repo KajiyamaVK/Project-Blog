@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { stateToHTML } from 'draft-js-export-html';
 import {
   EditorState,
   RichUtils,
@@ -59,8 +60,10 @@ export default function TextEditor(): JSX.Element {
   const handleSaveDraft = () => {
     const contentState = editorState.getCurrentContent();
     const raw = convertToRaw(contentState); // Convert to RawDraftContentState
-    //const converted = convertFromRaw(raw); // Convert from RawDraftContentState
-    console.log(typeof raw, raw);
+    const converted = convertFromRaw(raw); // Convert from RawDraftContentState
+    const JSONContentState = JSON.stringify(raw);
+
+    console.log('vk', typeof contentState);
   };
 
   return (

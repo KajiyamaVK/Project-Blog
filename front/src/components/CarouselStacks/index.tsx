@@ -1,14 +1,14 @@
 import { Carousel } from 'react-responsive-carousel';
 import StackContainer from '@/components/StackContainer';
 import dotnetIcon from '@@/imgs/Stacks/dotnet.png';
-import oracleIcon from '@@/imgs/Stacks/oracle.png';
-import sqlServerIcon from '@@/imgs/Stacks/sqlServer.png';
+import oracleIcon from '@@/imgs/Stacks/oracle.jpg';
+import sqlServerIcon from '@@/imgs/Stacks/mssqls.jpg';
 import htmlIcon from '@@/imgs/Stacks/html.png';
 import cssIcon from '@@/imgs/Stacks/css.png';
 import javascriptIcon from '@@/imgs/Stacks/javascript.jpg';
 import typescriptIcon from '@@/imgs/Stacks/typescript.jpg';
-import reactIcon from '@@/imgs/Stacks/react.png';
-import nextjsIcon from '@@/imgs/Stacks/nextjs.png';
+import reactIcon from '@@/imgs/Stacks/react.jpg';
+import nextjsIcon from '@@/imgs/Stacks/nextjs.jpg';
 import tailwindIcon from '@@/imgs/Stacks/tailwind.jpg';
 import styledComponentsIcon from '@@/imgs/Stacks/styledComponents.jpg';
 import jestIcon from '@@/imgs/Stacks/jest.jpg';
@@ -74,7 +74,12 @@ export default function CaroulselStacks() {
         }}
       >
         <div className="flex flex-col py-16 text-left">
-          <h1 className="mb-5 text-gray-100">LINGUAGENS</h1>
+          <h1
+            className="mb-5 text-gray-100"
+            style={{ fontSize: 'clamp(1rem,1.3rem, 1.5rem)' }}
+          >
+            LINGUAGENS
+          </h1>
           <div className="flex gap-x-5 gap-y-5">
             <StackContainer
               src={dotnetIcon}
@@ -100,14 +105,24 @@ export default function CaroulselStacks() {
         </div>
 
         <div className="flex flex-col py-16 text-left">
-          <h1 className="mb-5 text-gray-100 md:hidden">POWER-UPS IN CODES</h1>
-          <h1 className=" mb-5 hidden text-gray-100 md:block">POWER-UPS</h1>
+          <h1
+            className="mb-5 text-gray-100 md:hidden"
+            style={{ fontSize: 'clamp(1rem,1.3rem, 1.5rem)' }}
+          >
+            POWER-UPS IN CODES
+          </h1>
+          <h1
+            className=" mb-5 hidden text-gray-100 md:block"
+            style={{ fontSize: 'clamp(1rem,1.3rem, 1.5rem)' }}
+          >
+            POWER-UPS
+          </h1>
 
           <div className="flex flex-wrap gap-x-5 gap-y-5">
             <div className="flex flex-wrap gap-x-5 gap-y-5">
               <StackContainer
                 src={nextjsIcon}
-                alt="dotnetIcon"
+                alt="NextJS Logo"
                 hexColor="#95c7ff"
               />
               <StackContainer
@@ -117,7 +132,7 @@ export default function CaroulselStacks() {
               />
               <StackContainer
                 src={jestIcon}
-                alt="dotnetIcon"
+                alt="Jest Icon"
                 hexColor="#98747e"
               />
               <StackContainer
@@ -156,7 +171,12 @@ export default function CaroulselStacks() {
 
         <div>
           <div className="flex flex-col py-16 text-left md:hidden">
-            <h1 className="mb-5 text-gray-100">POWER-UPS IN UI</h1>
+            <h1
+              className="mb-5 text-gray-100"
+              style={{ fontSize: 'clamp(1rem,1.3rem, 1.5rem)' }}
+            >
+              POWER-UPS IN UI
+            </h1>
             <div>
               <div className="flex flex-wrap gap-x-5 gap-y-5">
                 <StackContainer
