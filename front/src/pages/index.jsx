@@ -19,7 +19,6 @@ export default function Home({ articles }) {
   const ArticlesRef = useRef(null);
 
   useEffect(() => {
-    console.log('vk', articles);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) entry.target.classList.add('animate-fade-in');
@@ -74,9 +73,11 @@ export default function Home({ articles }) {
   );
 }
 
-export const getStaticProps = async () => {
-  const response = await fetch('http://localhost:3000/api/get-articles');
-  const articles = await response.json();
+// export const getStaticProps = async () => {
+//   const response = await fetch(
+//     'https://www.fullstacker.com.br/api/get-articles'
+//   );
+//   const articles = await response.json();
 
-  return { props: { articles } };
-};
+//   return { props: { articles } };
+// };
