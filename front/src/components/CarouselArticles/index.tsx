@@ -9,7 +9,6 @@ export default function Articles(props: { articles: IArticle[] }) {
       // the naming can be any, depends on you.
       breakpoint: { max: 5700, min: 1800 },
       items: 4,
-      partialVisibilityGutter: 1,
     },
     desktop: {
       breakpoint: { max: 1800, min: 1405 },
@@ -20,8 +19,9 @@ export default function Articles(props: { articles: IArticle[] }) {
       items: 2,
     },
     tablet2: {
-      breakpoint: { max: 1036, min: 768 },
-      items: 2,
+      breakpoint: { max: 1036, min: 1 },
+      items: 1,
+      partialVisibilityGutter: 0,
     },
   };
   return (
@@ -42,7 +42,7 @@ export default function Articles(props: { articles: IArticle[] }) {
         //pauseOnHover
         infinite={true}
         showDots
-        slidesToSlide={2}
+        //slidesToSlide={2}
         className="my-10 flex justify-center"
       >
         {props.articles.map((article) => {
