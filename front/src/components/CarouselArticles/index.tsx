@@ -6,21 +6,24 @@ import { IArticle } from '@/interfaces/IArticle';
 export default function Articles(props: { articles: IArticle[] }) {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 5700, min: 1800 },
       items: 4,
+      partialVisibilityGutter: 40,
     },
     desktop: {
       breakpoint: { max: 1800, min: 1405 },
       items: 3,
+      partialVisibilityGutter: 40,
     },
     tablet: {
       breakpoint: { max: 1405, min: 1036 },
       items: 2,
+      partialVisibilityGutter: 40,
     },
     tablet2: {
       breakpoint: { max: 1036, min: 1 },
-      items: 1,
+      items: 2,
+      partialVisibilityGutter: 40,
     },
   };
   return (
@@ -33,16 +36,16 @@ export default function Articles(props: { articles: IArticle[] }) {
 
       <Carousel
         responsive={responsive}
-        centerMode={true}
+        //centerMode={true}
         //autoPlay
         //autoPlaySpeed={5000}
         //rewind={true}
         //rewindWithAnimation={true}
         //pauseOnHover
-        //infinite={true}
+        infinite={true}
         showDots
         //slidesToSlide={2}
-        className="my-10 flex justify-center"
+        className="my-10 gap-2"
       >
         {props.articles.map((article) => {
           return (
