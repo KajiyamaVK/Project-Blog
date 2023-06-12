@@ -21,7 +21,6 @@ export default function Articles(props: { articles: IArticle[] }) {
     tablet2: {
       breakpoint: { max: 1036, min: 1 },
       items: 1,
-      partialVisibilityGutter: 0,
     },
   };
   return (
@@ -40,7 +39,7 @@ export default function Articles(props: { articles: IArticle[] }) {
         //rewind={true}
         //rewindWithAnimation={true}
         //pauseOnHover
-        infinite={true}
+        //infinite={true}
         showDots
         //slidesToSlide={2}
         className="my-10 flex justify-center"
