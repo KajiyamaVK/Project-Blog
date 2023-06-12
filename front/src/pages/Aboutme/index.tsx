@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import foto from '../../../public/imgs/foto.jpg';
-import CarouselComponent from '@/components/Carousel';
+import CaroulselQualities from '@/components/CarouselQualities';
 import CaroulselStacks from '@/components/CarouselStacks';
-import { differentialsCarousel } from '@/components/Carousel/data';
 import { Paper } from '@mui/material';
 
 export default function Aboutme() {
@@ -84,18 +83,9 @@ export default function Aboutme() {
         <CaroulselStacks />
         <div className=" mx-2/3 mx-0 mt-10 flex w-full flex-wrap justify-evenly gap-y-5">
           <Paper className="w-[400px] rounded-lg bg-gray-100" elevation={10}>
-            <CarouselComponent data={differentialsCarousel} />
+            <CaroulselQualities />
           </Paper>
 
-          {/* <Paper
-            className="elevation={4} w-[400px] rounded-lg bg-gray-100"
-            elevation={10}
-          >
-            <CarouselComponent
-              mainTitle={differentialsCarousel.mainTitle}
-              data={differentialsCarousel.data}
-            />
-          </Paper> */}
         </div>
       </div>
     </div>

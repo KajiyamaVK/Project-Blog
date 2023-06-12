@@ -5,7 +5,7 @@ const icons = socialLinks
   .filter((link) => link.name === 'Whatsapp' || link.name === 'Email')
   .map((link, index) => (
     <a key={index} href={link.linkData.linkURL} target="_blank">
-      <div className="mb-3 cursor-pointer text-3xl text-gray-100">
+      <div className="mb-3 cursor-pointer text-3xl text-gray-100 ">
         {link.linkData.icon}
       </div>
     </a>

@@ -3,7 +3,3 @@ export interface iCarouselData {
   title: string;
   description: string;
 }
-
-export interface iCarouselProps {
-  data: iCarouselData[];
-}

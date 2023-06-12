@@ -1,7 +1,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { iCarouselProps } from './interface';
 import Image from 'next/image';
+import {differentialsCarousel} from './data';
 
 /**
  * @name CarouselComponent
@@ -10,7 +10,7 @@ import Image from 'next/image';
  * @param {string} mainTitle Título principal do carrossel
  */
 
-export default function CarouselComponent({ data }: iCarouselProps) {
+export default function CarouselComponent() {
   return (
     <div>
       <Carousel
@@ -70,7 +70,7 @@ export default function CarouselComponent({ data }: iCarouselProps) {
           );
         }}
       >
-        {data.map((item, index) => (
+        {differentialsCarousel.map((item, index) => (
           <div
             key={index}
             className="margin-0 mb-3 flex h-full flex-row items-center justify-center"

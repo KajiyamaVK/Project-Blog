@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['i.imgur.com'],
+    domains: ['i.imgur.com', 'linkedin.com','media.licdn.com'],
   },
   compiler: {
     styledComponents: true,

@@ -8,15 +8,18 @@ import Aboutme from '../pages/Aboutme';
 import WorkExperience from '../pages/WorkExperience';
 import LastBar from '../components/LastBar';
 import MetaTags from '@/components/MetaTags';
+import Articles from '@/components/CarouselArticles';
 
 const font = Raleway({ subsets: ['latin'], weights: [400, 500, 700] });
 
-export default function Home() {
+export default function Home({ articles }) {
   const HomepageRef = useRef(null);
   const ExperienceRef = useRef(null);
   const AboutMeRef = useRef(null);
+  const ArticlesRef = useRef(null);
 
   useEffect(() => {
+    console.log('vk', articles);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) entry.target.classList.add('animate-fade-in');
@@ -25,6 +28,7 @@ export default function Home() {
       observer.observe(HomepageRef.current);
       observer.observe(AboutMeRef.current);
       observer.observe(ExperienceRef.current);
+      observer.observe(ArticlesRef.current);
 
       return () => {
         observer.disconnect();
@@ -34,6 +38,7 @@ export default function Home() {
     if (HomepageRef.current) observer.observe(HomepageRef.current);
     if (ExperienceRef.current) observer.observe(ExperienceRef.current);
     if (AboutMeRef.current) observer.observe(AboutMeRef.current);
+    if (ArticlesRef.current) observer.observe(ArticlesRef.current);
   }, []);
 
   return (
@@ -44,17 +49,21 @@ export default function Home() {
         <link rel="icon" href="/imgs/logo.ico" />
       </Head>
 
-      <div className="mx-fluid-2 flex flex-col justify-center overflow-hidden ">
-        <div className="relative opacity-0 " ref={HomepageRef}>
+      <div className="flex flex-col justify-center overflow-hidden ">
+        <div className="relative mx-fluid-2 opacity-0 " ref={HomepageRef}>
           <Homepage />
         </div>
 
-        <div className="relative opacity-0" ref={AboutMeRef}>
+        <div className="relative mx-fluid-2 opacity-0 " ref={AboutMeRef}>
           <Aboutme />
         </div>
 
-        <div className="relative opacity-0" ref={ExperienceRef}>
+        <div className="relative mx-fluid-2 opacity-0 " ref={ExperienceRef}>
           <WorkExperience />
+        </div>
+
+        <div className="relative mx-0 opacity-0" ref={ArticlesRef}>
+          <Articles articles={articles} />
         </div>
         <div className="h-96"></div>
       </div>
@@ -64,3 +73,10 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const response = await fetch('http://localhost:3000/api/get-articles');
+  const articles = await response.json();
+
+  return { props: { articles } };
+};

@@ -24,6 +24,6 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/TextEditor/uploadFiles.tsx"
-  ],
+, "src/components/CarouselArticles/index.jsx"  ],
   "exclude": ["node_modules"]
 }
