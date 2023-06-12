@@ -61,9 +61,9 @@ export default function Home({ articles }) {
           <WorkExperience />
         </div>
 
-        <div className="relative mx-0 opacity-0" ref={ArticlesRef}>
+        {/* <div className="relative mx-0 opacity-0" ref={ArticlesRef}>
           <Articles articles={articles} />
-        </div>
+        </div> */}
         <div className="h-96"></div>
       </div>
       <SocialMediaBar />
@@ -74,6 +74,7 @@ export default function Home({ articles }) {
 }
 
 // export const getStaticProps = async () => {
+//   const app_link = process.env.APP_LINK;
 //   const response = await fetch(
 //     'https://www.fullstacker.com.br/api/get-articles'
 //   );
