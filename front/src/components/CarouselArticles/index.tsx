@@ -25,7 +25,7 @@ export default function Articles(props: { articles: IArticle[] }) {
   return (
     <div className="flex w-screen flex-col justify-center bg-white">
       <div className="w-fit">
-        <h1 className="pl-5 pt-5 text-green-900 after:block after:h-[1px] after:w-full after:bg-green-900 ">
+        <h1 className="pl-10 pt-10 text-green-900 after:block after:h-[1px] after:w-full after:bg-green-900 ">
           Artigos Linkedin
         </h1>
       </div>
@@ -41,7 +41,7 @@ export default function Articles(props: { articles: IArticle[] }) {
         infinite={true}
         showDots
         //slidesToSlide={2}
-        className="my-10 gap-2"
+        className="my-20 gap-2"
       >
         {props.articles.map((article) => {
           return (
