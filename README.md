@@ -2,6 +2,14 @@
 
 ---
 
+<style>
+
+  p{
+    text-indent:40px;
+  }
+
+</style>
+
 <div style='display:flex;'>
 <div style='width:100px;'>
 
@@ -37,11 +45,3 @@ This is my portfolio which is already online at https://fullstacker.com.br. Some
 <p>
 The articles here presented were all written at Linkedin but to get all the data for the thumbnails, a web scrapper had to be developed since Linkedin doesn't have an API to do it. It's important to say that only MY PUBLIC content is being fetched.
 </p>
-
-<style>
-
-  p{
-    text-indent:40px;
-  }
-
-</style>
