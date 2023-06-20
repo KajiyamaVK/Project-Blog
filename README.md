@@ -3,17 +3,16 @@
 ---
 
 <div style='display:flex; margin-bottom:50px'>
-  <img src='./front/public/imgs/Stacks/javascript.jpg' width='100px' style='border-right:1px solid white'/>
-  <img src='./front/public/imgs/Stacks/react.jpg' width='100px' style='border-right:1px solid white'/>
-  <img src='./front/public/imgs/Stacks/nextjs.jpg' width='100px'style='border-right:1px solid white'/>
-  <img src='./front/public/imgs/Stacks/html.png' width='100px'style='border-right:1px solid white'/>
-  <img src='./front/public/imgs/Stacks/css.png' width='100px'style='border-right:1px solid white'/>
-  <img src='./front/public/imgs/Stacks/tailwind.jpg' width='100px'style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/javascript.jpg' width='50px' style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/react.jpg' width='50px' style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/nextjs.jpg' width='50px'style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/html.png' width='50px'style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/css.png' width='50px'style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/tailwind.jpg' width='50px'style='border-right:1px solid white'/>
 </div>
- 
- 
-  
- 
+<br>
+<br>
+
 **About the project**
 
 <p style='text-indent:40px;'>
