@@ -2,28 +2,13 @@
 
 ---
 
-<div style='display:flex;'>
-<div style='width:100px;'>
-
-![JavascriptLogo](front/public/imgs/Stacks/javascript.jpg)
-
-</div>
-
-<div style='width:100px;'>
-
-![NextJSLogo](front/public/imgs/Stacks/nextjs.jpg)
-
-</div>
-<div style='width:100px;'>
-
-![CSSLogo](front/public/imgs/Stacks/css.png)
-
-</div>
-<div style='width:100px;'>
-
-![TailwindLogo](front/public/imgs/Stacks/tailwind.jpg)
-
-</div>
+<div style='display:flex; margin-bottom:50px'>
+  <img src='./front/public/imgs/Stacks/javascript.jpg' width='100px' style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/react.jpg' width='100px' style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/nextjs.jpg' width='100px'style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/html.png' width='100px'style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/css.png' width='100px'style='border-right:1px solid white'/>
+  <img src='./front/public/imgs/Stacks/tailwind.jpg' width='100px'style='border-right:1px solid white'/>
 </div>
 
 **About the project**
@@ -33,6 +18,8 @@ This is my portfolio which is already online at https://fullstacker.com.br. Some
 </p>
 
 **The use os web scapers**
+
+<img src='./front/public/imgs/github/scrapper.png' />
 
 <p style='text-indent:40px;'>
 The articles here presented were all written at Linkedin but to get all the data for the thumbnails, a web scrapper had to be developed since Linkedin doesn't have an API to do it. It's important to say that only MY PUBLIC content is being fetched.
