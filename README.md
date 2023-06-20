@@ -13,13 +13,13 @@
 <br>
 <br>
 
-**About the project**
+## About the project
 
 <p style='text-indent:40px;'>
 This is my portfolio which is already online at https://fullstacker.com.br. Some libraries were used to create the carousels: React-responsive-carousel and React-Multi-Carousel.
 </p>
 
-**The use os web scapers**
+## The use os web scapers
 
 <img src='./front/public/imgs/github/scrapper.png' />
 
