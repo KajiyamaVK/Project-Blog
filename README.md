@@ -10,7 +10,10 @@
   <img src='./front/public/imgs/Stacks/css.png' width='100px'style='border-right:1px solid white'/>
   <img src='./front/public/imgs/Stacks/tailwind.jpg' width='100px'style='border-right:1px solid white'/>
 </div>
-
+ 
+ 
+  
+ 
 **About the project**
 
 <p style='text-indent:40px;'>
